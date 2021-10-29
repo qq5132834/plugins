@@ -1,0 +1,60 @@
+<idea-plugin>
+  <!-- 插件的id，保持唯一-->
+  <id>com.blueguagua.idea.first.plugin.id</id>
+  <!-- 插件的名称-->
+  <name>第一个插件</name>
+  <!-- 版本-->
+  <version>1.0</version>
+  <!-- 作者和提供方信息-->
+  <vendor email="513283439@qq.com" url="http://www.blueguagua.com">blueguagua</vendor>
+  <!-- 插件内容的描述-->
+  <description><![CDATA[
+      blueguagua公司开发的第一个插件.<br>
+      <em>
+        <h1>blueguagua公司开发的第一个插件</h1>
+      </em>
+    ]]></description>
+  <!-- 变更日志-->
+  <change-notes><![CDATA[
+      Add1 change1 notes1 here1.<br>
+      <em>most1 HTML1 tags1 may1 be1 used1</em>
+    ]]>
+  </change-notes>
+  <!-- 插件支持的最低的版本号 -->
+  <idea-version since-build="173.0"/>
+  <!-- 相关的其他依赖 -->
+  <depends>com.intellij.modules.lang</depends>
+  <!-- 扩展的内容 -->
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <toolWindow id="NoteWindow"
+                factoryClass="com.blueguagua.firstplugin.mouseRight.action.window.NodeWindowFactory"
+                anchor="right"
+                icon="/img/logo.svg"
+    ></toolWindow>
+  </extensions>
+
+  <application-components>
+    <component>
+      <!-- ApplicationComponent实现的类 -->
+      <implementation-class>com.blueguagua.firstplugin.MyApplicationComponent</implementation-class>
+    </component>
+  </application-components>
+
+  <!-- 菜单动作 -->
+  <actions>
+    <!-- Add your actions here -->
+    <action id="FirstPluginActionID"
+            class="com.blueguagua.firstplugin.toolMenu.action.FirstPluginAction"
+            text="第一个插件"
+            description="第一个插件巴拉巴拉t">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="I"/>
+    </action>
+    <action id="MouseActionID" class="com.blueguagua.firstplugin.mouseRight.action.MouseAction" text="鼠标右键菜单"
+            description="鼠标右键菜单">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
