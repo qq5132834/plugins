@@ -21,6 +21,7 @@ public class PfcCaretListener implements CaretListener {
 
         System.out.println("PfcCaretListener.caretPositionChanged.oldLine:" + oldLine);
         System.out.println("PfcCaretListener.caretPositionChanged.oldColumn:" + oldColumn);
+
     }
 
     @Override

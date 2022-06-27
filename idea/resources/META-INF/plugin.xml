@@ -44,6 +44,12 @@
             implementationClass="com.blueguagua.firstplugin.updatefile.TestInspectionTool"
     />
 
+    <toolWindow id="SonarLint-pom"
+                anchor="bottom"
+                icon="/img/logo.svg"
+                factoryClass="com.blueguagua.firstplugin.updatefile.SonarLintToolWindowFactory"
+                canCloseContents="true"/>
+
   </extensions>
 
   <application-components>
