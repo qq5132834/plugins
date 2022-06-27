@@ -31,7 +31,19 @@
                 factoryClass="com.blueguagua.firstplugin.mouseRight.action.window.NodeWindowFactory"
                 anchor="right"
                 icon="/img/logo.svg"
-    ></toolWindow>
+    />
+
+    <localInspection
+            language="JAVA"
+            displayName="Test field error"
+            groupPath="Java"
+            groupBundle="messages.InspectionsBundle"
+            groupKey="group.names.probable.bugs"
+            enabledByDefault="true"
+            level="ERROR"
+            implementationClass="com.blueguagua.firstplugin.updatefile.TestInspectionTool"
+    />
+
   </extensions>
 
   <application-components>
@@ -39,6 +51,12 @@
       <!-- ApplicationComponent实现的类 -->
       <implementation-class>com.blueguagua.firstplugin.MyApplicationComponent</implementation-class>
     </component>
+
+    <component>
+      <!--  -->
+      <implementation-class>com.blueguagua.firstplugin.updatefile.PlantUmlApplicationComponent</implementation-class>
+    </component>
+
   </application-components>
 
 
