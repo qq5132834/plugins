@@ -31,7 +31,25 @@
                 factoryClass="com.blueguagua.firstplugin.mouseRight.action.window.NodeWindowFactory"
                 anchor="right"
                 icon="/img/logo.svg"
-    ></toolWindow>
+    />
+
+    <localInspection
+            language="JAVA"
+            displayName="Test field error"
+            groupPath="Java"
+            groupBundle="messages.InspectionsBundle"
+            groupKey="group.names.probable.bugs"
+            enabledByDefault="true"
+            level="ERROR"
+            implementationClass="com.blueguagua.firstplugin.updatefile.TestInspectionTool"
+    />
+
+    <toolWindow id="SonarLint-pom"
+                anchor="bottom"
+                icon="/img/logo.svg"
+                factoryClass="com.blueguagua.firstplugin.updatefile.SonarLintToolWindowFactory"
+                canCloseContents="true"/>
+
   </extensions>
 
   <application-components>
@@ -39,7 +57,14 @@
       <!-- ApplicationComponent实现的类 -->
       <implementation-class>com.blueguagua.firstplugin.MyApplicationComponent</implementation-class>
     </component>
+
+    <component>
+      <!--  -->
+      <implementation-class>com.blueguagua.firstplugin.updatefile.PlantUmlApplicationComponent</implementation-class>
+    </component>
+
   </application-components>
+
 
   <!-- 菜单动作 -->
   <actions>
