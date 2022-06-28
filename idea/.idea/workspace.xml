@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88a5665b-c588-4e12-b3fa-65f974afba37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sonarlint_intellij_4_3_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/sonarlint-intellij-4.3-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/idea/META-INF/idea.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/idea/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/idea/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/idea/com/blueguagua/firstplugin/mouseRight/action/MouseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/idea/com/blueguagua/firstplugin/mouseRight/action/MouseAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/PfcCaretListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/PfcCaretListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/PfcDocumentListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/PfcDocumentListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/PlantUmlApplicationComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/PlantUmlApplicationComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/SonarLintToolWindowFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/SonarLintToolWindowFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/form/Pom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blueguagua/firstplugin/updatefile/form/Pom.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +46,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/img" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/sonarlint-intellij-4.3-SNAPSHOT.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -47,6 +57,7 @@
       <recent name="com.blueguagua" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\development\github\plugin\idea\libs" />
       <recent name="D:\development\github\plugin\idea\resources\img" />
     </key>
   </component>

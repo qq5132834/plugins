@@ -33,14 +33,16 @@ public class Pom {
         POM_CONTENTS.stream().map(e->e.getTip()).forEach(dlm::addElement);
         list1.setModel(dlm);
         this.list1.addListSelectionListener(e->{
-            Arrays.stream(list1.getSelectedIndices()).forEach(index->{
-                PomContent pomContent = MAP.get(list1.getModel().getElementAt(index));
+            PomContent pomContent = MAP.get(list1.getModel().getElementAt(list1.getSelectedIndices()[0]));
+            System.out.println(pomContent.getTip());
 
-                RangeMarker rangeMarker = new RangeMarker() {
+            RangeMarker rangeMarker = new RangeMarker() {
                     @NotNull
                     @Override
                     public Document getDocument() {
-                        return PfcDocumentListener.getDocument();
+                        Document document = PfcDocumentListener.getDocument();
+                        System.out.println(document.getClass().getSimpleName());
+                        return document;
                     }
 
                     @Override
@@ -94,11 +96,21 @@ public class Pom {
 
                     }
                 };
+
                 SonarLintToolWindowFactory.getSonarLintHighlighting()
-                        .highlightFlowsWithHighlightersUtil(rangeMarker, "helloworld", Collections.emptyList());
+                        .highlightFlowsWithHighlightersUtil(rangeMarker, "你好。helloworld=" + pomContent.getTip(), Collections.emptyList());
 
 
-            });
+
+//            Arrays.stream(list1.getSelectedIndices()).forEach(index->{
+//                PomContent pomContent = MAP.get(list1.getModel().getElementAt(index));
+//                System.out.println(pomContent.getTip());
+//
+//                SonarLintToolWindowFactory.getSonarLintHighlighting()
+//                        .highlightFlowsWithHighlightersUtil(rangeMarker, "你好。helloworld=" + pomContent.getTip(), Collections.emptyList());
+//
+//
+//            });
         });
     }
 
@@ -157,3 +169,4 @@ public class Pom {
     }
 
 }
+

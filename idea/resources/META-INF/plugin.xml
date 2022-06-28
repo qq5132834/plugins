@@ -27,11 +27,11 @@
   <!-- 扩展的内容 -->
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-<!--    <toolWindow id="NoteWindow"-->
-<!--                factoryClass="com.blueguagua.firstplugin.mouseRight.action.window.NodeWindowFactory"-->
-<!--                anchor="right"-->
-<!--                icon="/img/logo.svg"-->
-<!--    />-->
+    <toolWindow id="NoteWindow"
+                factoryClass="com.blueguagua.firstplugin.mouseRight.action.window.NodeWindowFactory"
+                anchor="right"
+                icon="/img/logo.svg"
+    />
 
 <!--    <localInspection-->
 <!--            language="JAVA"-->
@@ -44,19 +44,19 @@
 <!--            implementationClass="com.blueguagua.firstplugin.updatefile.TestInspectionTool"-->
 <!--    />-->
 
-<!--    <toolWindow id="SonarLint-pom"-->
-<!--                anchor="bottom"-->
-<!--                icon="/img/logo.svg"-->
-<!--                factoryClass="com.blueguagua.firstplugin.updatefile.SonarLintToolWindowFactory"-->
-<!--                canCloseContents="true"/>-->
+    <toolWindow id="SonarLint-pom"
+                anchor="bottom"
+                icon="/img/logo.svg"
+                factoryClass="com.blueguagua.firstplugin.updatefile.SonarLintToolWindowFactory"
+                canCloseContents="true"/>
 
   </extensions>
 
   <application-components>
 
-<!--    <component>-->
-<!--      <implementation-class>com.blueguagua.firstplugin.MyApplicationComponent</implementation-class>-->
-<!--    </component>-->
+    <component>
+      <implementation-class>com.blueguagua.firstplugin.MyApplicationComponent</implementation-class>
+    </component>
 
     <component>
       <implementation-class>com.blueguagua.firstplugin.updatefile.PlantUmlApplicationComponent</implementation-class>

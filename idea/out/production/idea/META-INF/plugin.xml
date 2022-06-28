@@ -33,16 +33,16 @@
                 icon="/img/logo.svg"
     />
 
-    <localInspection
-            language="JAVA"
-            displayName="Test field error"
-            groupPath="Java"
-            groupBundle="messages.InspectionsBundle"
-            groupKey="group.names.probable.bugs"
-            enabledByDefault="true"
-            level="ERROR"
-            implementationClass="com.blueguagua.firstplugin.updatefile.TestInspectionTool"
-    />
+<!--    <localInspection-->
+<!--            language="JAVA"-->
+<!--            displayName="Test field error"-->
+<!--            groupPath="Java"-->
+<!--            groupBundle="messages.InspectionsBundle"-->
+<!--            groupKey="group.names.probable.bugs"-->
+<!--            enabledByDefault="true"-->
+<!--            level="ERROR"-->
+<!--            implementationClass="com.blueguagua.firstplugin.updatefile.TestInspectionTool"-->
+<!--    />-->
 
     <toolWindow id="SonarLint-pom"
                 anchor="bottom"
@@ -53,13 +53,12 @@
   </extensions>
 
   <application-components>
+
     <component>
-      <!-- ApplicationComponent实现的类 -->
       <implementation-class>com.blueguagua.firstplugin.MyApplicationComponent</implementation-class>
     </component>
 
     <component>
-      <!--  -->
       <implementation-class>com.blueguagua.firstplugin.updatefile.PlantUmlApplicationComponent</implementation-class>
     </component>
 

@@ -10,6 +10,7 @@ import com.intellij.openapi.vfs.VirtualFile;
 import org.jetbrains.annotations.NotNull;
 
 /***
+ * 通过修改文件处理此类的监听
  *
  * @author
  */

@@ -26,9 +26,8 @@ public class SonarLintToolWindowFactory implements ToolWindowFactory {
 
     @Override
     public void createToolWindowContent(@NotNull Project pro, @NotNull ToolWindow toolWindow) {
-//        project = pro;
-//        sonarLintHighlighting = new SonarLintHighlighting(pro);
-        //sonarLintHighlighting.highlightFlowsWithHighlightersUtil(null, "helloworld", Collections.emptyList());
+        project = pro;
+        sonarLintHighlighting = new SonarLintHighlighting(pro);
         //
         Pom pom = new Pom();
         ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
