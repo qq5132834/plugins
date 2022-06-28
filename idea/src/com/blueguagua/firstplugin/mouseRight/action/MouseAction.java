@@ -31,7 +31,6 @@ public class MouseAction extends AnAction {
         System.out.println("鼠标选择了文件[" + fileName + "]中的内容:");
         System.out.println(selectedText);
 
-
     }
 
 }

@@ -7,8 +7,8 @@ import com.intellij.openapi.editor.event.DocumentListener;
 import com.intellij.openapi.editor.event.EditorEventMulticaster;
 
 public class PlantUmlApplicationComponent implements ApplicationComponent {
-    private DocumentListener plantUmlDocumentListener = new PfcDocumentListener();
-    private CaretListener pfcCaretListener = new PfcCaretListener();
+    //private DocumentListener plantUmlDocumentListener = new PfcDocumentListener();
+    private PfcCaretListener pfcCaretListener = new PfcCaretListener();
 
     public PlantUmlApplicationComponent() {
         PlantUmlApplicationComponent.class.getClassLoader().setDefaultAssertionStatus(false);
@@ -17,15 +17,15 @@ public class PlantUmlApplicationComponent implements ApplicationComponent {
     @Override
     public void initComponent() {
         EditorEventMulticaster eventMulticaster = EditorFactory.getInstance().getEventMulticaster();
-        eventMulticaster.addDocumentListener(plantUmlDocumentListener);
-        eventMulticaster.addCaretListener(pfcCaretListener);
+        eventMulticaster.addDocumentListener(pfcCaretListener);
+//        eventMulticaster.addCaretListener(pfcCaretListener);
     }
 
     @Override
     public void disposeComponent() {
-        EditorEventMulticaster eventMulticaster = EditorFactory.getInstance().getEventMulticaster();
-        eventMulticaster.removeDocumentListener(plantUmlDocumentListener);
-        eventMulticaster.removeCaretListener(pfcCaretListener);
+       // EditorEventMulticaster eventMulticaster = EditorFactory.getInstance().getEventMulticaster();
+       // eventMulticaster.removeDocumentListener(plantUmlDocumentListener);
+       // eventMulticaster.removeCaretListener(pfcCaretListener);
     }
 
     @Override

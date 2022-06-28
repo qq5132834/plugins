@@ -1,5 +1,13 @@
 package com.blueguagua.firstplugin.updatefile.form;
 
+import com.blueguagua.firstplugin.updatefile.PfcDocumentListener;
+import com.blueguagua.firstplugin.updatefile.SonarLintToolWindowFactory;
+import com.intellij.openapi.editor.Document;
+import com.intellij.openapi.editor.RangeMarker;
+import com.intellij.openapi.util.Key;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import javax.swing.*;
 import java.util.*;
 
@@ -27,6 +35,68 @@ public class Pom {
         this.list1.addListSelectionListener(e->{
             Arrays.stream(list1.getSelectedIndices()).forEach(index->{
                 PomContent pomContent = MAP.get(list1.getModel().getElementAt(index));
+
+                RangeMarker rangeMarker = new RangeMarker() {
+                    @NotNull
+                    @Override
+                    public Document getDocument() {
+                        return PfcDocumentListener.getDocument();
+                    }
+
+                    @Override
+                    public int getStartOffset() {
+                        return 1;
+                    }
+
+                    @Override
+                    public int getEndOffset() {
+                        return 2;
+                    }
+
+                    @Override
+                    public boolean isValid() {
+                        return false;
+                    }
+
+                    @Override
+                    public void setGreedyToLeft(boolean b) {
+
+                    }
+
+                    @Override
+                    public void setGreedyToRight(boolean b) {
+
+                    }
+
+                    @Override
+                    public boolean isGreedyToRight() {
+                        return false;
+                    }
+
+                    @Override
+                    public boolean isGreedyToLeft() {
+                        return false;
+                    }
+
+                    @Override
+                    public void dispose() {
+
+                    }
+
+                    @Nullable
+                    @Override
+                    public <T> T getUserData(@NotNull Key<T> key) {
+                        return null;
+                    }
+
+                    @Override
+                    public <T> void putUserData(@NotNull Key<T> key, @Nullable T t) {
+
+                    }
+                };
+                SonarLintToolWindowFactory.getSonarLintHighlighting()
+                        .highlightFlowsWithHighlightersUtil(rangeMarker, "helloworld", Collections.emptyList());
+
 
             });
         });
